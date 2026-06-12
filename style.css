@@ -1,0 +1,112 @@
+/* Estilos Generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121824;
+    color: #e2e8f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #1e293b;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    border-bottom: 3px solid #3b82f6;
+}
+
+header h1 {
+    margin: 0;
+    color: #3b82f6;
+    font-size: 2.5rem;
+}
+
+header p {
+    color: #94a3b8;
+    margin-top: 0.5rem;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    flex: 1;
+}
+
+/* Tarjetas de Programas */
+.card {
+    background-color: #1e293b;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #334155;
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #f8fafc;
+}
+
+.description {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    flex: 1;
+}
+
+.specs {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: #64748b;
+    margin: 1rem 0;
+    padding-top: 0.5rem;
+    border-top: 1px solid #334155;
+}
+
+/* Botón de Descarga */
+.download-btn {
+    display: block;
+    text-align: center;
+    background-color: #3b82f6;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.75rem;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.download-btn:hover {
+    background-color: #2563eb;
+}
+
+/* Tarjetas Próximamente */
+.card.future {
+    opacity: 0.6;
+    border: 1px dashed #475569;
+}
+
+.badge {
+    align-self: flex-start;
+    background-color: #475569;
+    color: #cbd5e1;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #0f172a;
+    color: #64748b;
+    font-size: 0.85rem;
+}
